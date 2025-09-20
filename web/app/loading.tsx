@@ -1,3 +1,5 @@
+import { Loader } from "lucide-react";
+
 export default function Loading() {
-  return <p>Loading...</p>;
+  return <Loader className="animate-spin"></Loader>;
 }

@@ -1,9 +1,22 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* colors */
-  --color-primary: var(--color-green-400);
-  /* fonts */
+  /* COLORS */
+  --color-normal: var(--color-slate-100);
+  --color-background: var(--color-slate-800);
+  --color-selection-background: var(--color-green-400);
+  --color-selection: var(--color-slate-700);
+  /* footer */
+  --color-footer-background: var(--color-green-400);
+  --color-footer-brand: var(--color-green-300);
+  --color-footer-brand-hover: var(--color-green-200);
+  /* header */
+  --color-header-background: var(--color-slate-700);
+  --color-header-pages: var(--color-slate-100);
+  --color-header-pages-hover: var(--color-green-400);
+  --color-header-pages-hover-background: var(--color-slate-800);
+
+  /* FONTS */
   --font-petit: var(--font-petit);
 }
 
@@ -12,5 +25,5 @@
 }
 
 body {
-  @apply bg-slate-100 selection:bg-green-300 selection:text-slate-800;
+  @apply selection:bg-selection-background bg-slate-700;
 }

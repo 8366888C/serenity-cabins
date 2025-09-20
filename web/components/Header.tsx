@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 right-0 left-0 z-3 bg-slate-800/20 px-8 py-4 backdrop-blur-sm">
+    <header className="bg-background/50 hover:bg-background/50 sticky top-6 right-0 left-0 z-50 mx-12 mb-0 flex items-center justify-between rounded-full p-4 px-10 shadow-2xl backdrop-blur-sm transition-all duration-150 ease-in-out hover:shadow-2xl">
       <Logo />
       <Navigation />
     </header>
