@@ -25,5 +25,5 @@
 }
 
 body {
-  @apply selection:bg-selection-background bg-slate-700;
+  @apply bg-slate-700 selection:bg-blue-400;
 }

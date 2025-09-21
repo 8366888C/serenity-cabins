@@ -3,17 +3,17 @@ import { LogIn } from "lucide-react";
 
 export default function Navigation() {
   return (
-    <ul className="flex items-center justify-center gap-4">
+    <ul className="flex items-center justify-center gap-2">
       <li className="rounded-full">
         <Link href="/cabins">
-          <span className="text-header-pages/80 hover:text-header-pages/100 rounded-xl px-2 py-1 text-2xl font-light select-none">
-            cabins
+          <span className="rounded-xl px-2 py-1 text-lg font-light text-slate-300 select-none hover:text-slate-100">
+            about
           </span>
         </Link>
       </li>
       <li>
         <Link href="/account">
-          <LogIn className="stroke-header-pages-hover hover:bg-header-pages-hover hover:stroke-background size-10 rounded-xl px-1.5 py-1.5 transition-all duration-100 ease-in-out active:size-9.5"></LogIn>
+          <LogIn className="size-8 rounded-xl stroke-blue-400 px-1.5 py-1.5 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:stroke-slate-800 active:size-7.5"></LogIn>
         </Link>
       </li>
     </ul>

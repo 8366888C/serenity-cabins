@@ -27,9 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${petit.variable} no-scrollbar scroll-smooth`}>
-      <body>
-        <Header />
-        <main>{children}</main>
+      <body className="antialiased">
+        <div className="relative z-2 bg-slate-700">
+          <Header />
+          <main className="min-h-screen">{children}</main>
+        </div>
         <Footer />
       </body>
     </html>

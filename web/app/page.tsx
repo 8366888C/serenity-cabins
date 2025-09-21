@@ -1,28 +1,28 @@
+import Image from "next/image";
+import Link from "next/link";
+import bg from "@/public/bg.png";
+
 export default function Page() {
   return (
-    <div className="relative z-2 bg-slate-700 pb-[96rem]">
-      <h1 className="px-12 pt-20 text-9xl font-extrabold text-slate-800">
-        Hello
-      </h1>
-      <div className="backdrop-blur-2xl">
-        <p className="mx-10 mt-10 rounded-3xl bg-slate-800/30 px-8 py-6 text-2xl font-light text-slate-500 shadow-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          provident exercitationem impedit explicabo, non eos amet labore rerum
-          pariatur voluptatum. Consequuntur, molestias placeat ut doloremque
-          voluptates officia numquam eum alias!
-        </p>
-        <p className="mx-10 mt-10 rounded-3xl bg-slate-800/30 px-8 py-6 text-2xl font-light text-slate-500 shadow-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          provident exercitationem impedit explicabo, non eos amet labore rerum
-          pariatur voluptatum. Consequuntur, molestias placeat ut doloremque
-          voluptates officia numquam eum alias!
-        </p>
-        <p className="mx-10 mt-10 rounded-3xl bg-slate-800/30 px-8 py-6 text-2xl font-light text-slate-500 shadow-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          provident exercitationem impedit explicabo, non eos amet labore rerum
-          pariatur voluptatum. Consequuntur, molestias placeat ut doloremque
-          voluptates officia numquam eum alias!
-        </p>
+    <div>
+      <Image
+        src={bg}
+        placeholder="blur"
+        fill
+        quality={100}
+        className="object-cover object-top"
+        alt="Lakeside cabin in a forest surrounded by mountains"
+      />
+      <div className="relative top-78 z-1 flex flex-col items-center gap-92">
+        <h1 className="text-4xl font-bold tracking-wide text-slate-300">
+          Welcome to paradise.
+        </h1>
+        <Link
+          href="/about"
+          className="px-6 py-3 text-lg font-light text-slate-100 outline-2 outline-blue-400 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:shadow-2xl hover:shadow-blue-400 hover:outline-none active:text-base"
+        >
+          Explore luxury cabins
+        </Link>
       </div>
     </div>
   );
