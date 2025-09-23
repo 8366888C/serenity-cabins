@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <ul className="flex items-center justify-center gap-2">
       <li className="rounded-full">
-        <Link href="/cabins">
+        <Link href="/about">
           <span className="rounded-xl px-2 py-1 text-lg font-light text-slate-300 select-none hover:text-slate-100">
             about
           </span>

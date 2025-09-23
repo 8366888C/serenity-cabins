@@ -18,8 +18,8 @@ export default function Page() {
           Welcome to paradise.
         </h1>
         <Link
-          href="/about"
-          className="px-6 py-3 text-lg font-light text-slate-100 outline-2 outline-blue-400 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:shadow-2xl hover:shadow-blue-400 hover:outline-none active:text-base"
+          href="/cabins"
+          className="px-6 py-3 text-lg font-light text-slate-100 outline-2 outline-blue-400 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:shadow-2xl hover:shadow-blue-400 hover:outline-none active:text-[1.05rem]"
         >
           Explore luxury cabins
         </Link>
