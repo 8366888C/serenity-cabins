@@ -54,7 +54,6 @@ export default function TiltImage({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-      className={className}
     >
       <Image alt={alt} {...props} className={className} placeholder="blur" />
     </div>
