@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import Navigation from "./Navigation";
+import Navigation from "./Navbar";
 
 export default function Header() {
   return (

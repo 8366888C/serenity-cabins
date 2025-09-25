@@ -13,7 +13,7 @@ export default function Navigation() {
       </li>
       <li>
         <Link href="/account">
-          <LogIn className="size-8 rounded-xl stroke-blue-400 px-1.5 py-1.5 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:stroke-slate-800 active:size-7.5"></LogIn>
+          <LogIn className="size-8 rounded-xl stroke-blue-400 px-1.5 py-1.5 transition-colors duration-100 ease-in-out hover:bg-blue-400 hover:stroke-slate-800 active:stroke-slate-200"></LogIn>
         </Link>
       </li>
     </ul>
