@@ -16,7 +16,7 @@ export default function About1({ heading, content, image }: AboutProps) {
           {heading}
         </h1>
         <div className="flex flex-wrap md:flex-nowrap">
-          <div className="space-y-6 pb-10 text-slate-400 selection:text-blue-200">
+          <div className="space-y-6 pb-10 text-slate-400 selection:text-blue-100">
             {content}
           </div>
           <TiltImage

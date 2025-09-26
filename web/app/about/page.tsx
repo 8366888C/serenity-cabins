@@ -65,7 +65,7 @@ export default function Page() {
       <div className="text-center">
         <Link
           href="/cabins"
-          className="px-6 py-3 text-lg font-light text-slate-200 outline-2 outline-blue-400 transition-all duration-100 ease-in-out hover:bg-blue-400 hover:shadow-2xl hover:shadow-blue-400 hover:outline-none active:text-[1.05rem]"
+          className="px-6 py-3 text-lg font-light text-slate-200 outline-2 outline-blue-400 transition-all duration-100 ease-in-out select-none hover:bg-blue-400 hover:shadow-2xl hover:shadow-blue-400 hover:outline-none active:text-[1.05rem]"
         >
           Explore luxury cabins
         </Link>
