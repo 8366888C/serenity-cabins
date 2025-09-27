@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Petit_Formal_Script } from "next/font/google";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const petit = Petit_Formal_Script({
   subsets: ["latin"],
@@ -28,11 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${petit.variable} no-scrollbar scroll-smooth`}>
       <body className="antialiased">
-        <div className="relative z-2 bg-slate-700">
+        <div className="max-h-screen bg-slate-700">
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main>{children}</main>
         </div>
-        <Footer />
       </body>
     </html>
   );

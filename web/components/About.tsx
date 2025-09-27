@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import TiltImage from "./TiltImage";
-import { StaticImageData } from "next/image";
+import Tilt from "./Tilt";
+import Image, { StaticImageData } from "next/image";
 
 interface AboutProps {
   heading: string;
@@ -19,11 +19,13 @@ export default function About1({ heading, content, image }: AboutProps) {
           <div className="space-y-6 pb-10 text-slate-400 selection:text-blue-100">
             {content}
           </div>
-          <TiltImage
-            src={image}
-            alt="Family sitting around a fire pit in front of cabin"
-            className="rounded-4xl shadow-2xl shadow-slate-800 select-none"
-          />
+          <Tilt>
+            <Image
+              src={image}
+              alt="Family sitting around a fire pit in front of cabin"
+              className="rounded-4xl shadow-2xl shadow-slate-800 select-none"
+            />
+          </Tilt>
         </div>
       </div>
     </div>

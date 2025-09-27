@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
-import tailwindcss from "tailwindcss";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  images: {
+    domains: ["ndzejmvauapcjjesrhiu.supabase.co"],
+  },
 };
 
 export default nextConfig;

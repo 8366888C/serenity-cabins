@@ -1,19 +1,14 @@
 "use client";
 
-import Image, { ImageProps } from "next/image";
 import { useRef } from "react";
 import { gsap } from "gsap";
 
-interface TiltImageProps extends Omit<ImageProps, "ref"> {
+interface TiltProps {
   className?: string;
-  alt: string;
+  children: React.ReactNode;
 }
 
-export default function TiltImage({
-  className,
-  alt,
-  ...props
-}: TiltImageProps) {
+export default function Tilt({ className, children }: TiltProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -54,8 +49,9 @@ export default function TiltImage({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transformStyle: "preserve-3d", perspective: 1000 }}
+      className={`select-none ${className ?? ""}`}
     >
-      <Image alt={alt} {...props} className={className} placeholder="blur" />
+      {children}
     </div>
   );
 }
