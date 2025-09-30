@@ -2,11 +2,11 @@ import { notFound } from "next/navigation";
 import { supabase } from "./supabase";
 
 // GET
-export async function getCabin(id: number) {
+export async function getCabin(name: string) {
   const { data, error } = await supabase
     .from("cabins")
     .select("*")
-    .eq("id,", id)
+    .eq("name,", name)
     .single();
 
   if (error) {
@@ -17,11 +17,11 @@ export async function getCabin(id: number) {
   return data;
 }
 
-export async function getCabinPrice(id: number) {
+export async function getCabinPrice(name: string) {
   const { data, error } = await supabase
     .from("cabins")
     .select("regular_price, discount")
-    .eq("id", id)
+    .eq("name", name)
     .single();
 
   if (error) {

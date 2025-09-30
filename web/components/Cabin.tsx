@@ -14,13 +14,13 @@ interface Cabin {
 
 export default function Cabin({ cabin }: { cabin: Cabin }) {
   return (
-    <div className="space-y-4 rounded-xl bg-slate-800/30 p-6 shadow-slate-800 transition-all duration-100 ease-in-out">
-      <Tilt className="relative overflow-hidden rounded-2xl bg-slate-800">
+    <div className="space-y-2 rounded-2xl bg-slate-800/20 p-2 shadow-slate-800 transition-all duration-100 ease-in-out">
+      <Tilt className="relative rounded-2xl bg-slate-800">
         <Link href={`/cabins/${cabin.name}`} className="group relative">
           <Image
             src={cabin.image_url}
-            height={1000}
-            width={1000}
+            height={10000}
+            width={10000}
             alt={`${cabin.name} photo`}
             className="rounded-2xl transition duration-100 ease-in-out group-hover:opacity-50"
           />
@@ -29,13 +29,15 @@ export default function Cabin({ cabin }: { cabin: Cabin }) {
           </h3>
         </Link>
       </Tilt>
-      <div>
-        <p className="text-slate-400 selection:text-blue-100">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt culpa
-          porro natus? Similique aspernatur deserunt consequatur sit iure. Et
-          vel optio praesentium ad a omnis reprehenderit iste ipsam numquam
-          maiores.
-        </p>
+      <div className="space-y-0 p-4">
+        <div className="flex items-center justify-between">
+          <p className="cursor-default text-slate-300 select-none selection:text-blue-100 hover:text-blue-300">
+            {`Capacity: ${cabin.max_capacity}`}
+          </p>
+          <p className="cursor-default text-slate-300 select-none selection:text-blue-100 hover:text-blue-300">
+            {`Price: $${cabin.regular_price}`}
+          </p>
+        </div>
       </div>
     </div>
   );

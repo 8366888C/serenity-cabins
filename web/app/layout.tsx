@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="max-h-screen bg-slate-700">
           <Header />
-          <main>{children}</main>
+          <main className="pt-12">{children}</main>
         </div>
       </body>
     </html>
