@@ -14,8 +14,8 @@ interface Cabin {
 
 export default function Cabin({ cabin }: { cabin: Cabin }) {
   return (
-    <div className="space-y-2 rounded-2xl bg-slate-800/20 p-2 shadow-slate-800 transition-all duration-100 ease-in-out">
-      <Tilt className="relative aspect-video rounded-2xl bg-slate-800">
+    <div className="space-y-2 rounded-2xl bg-slate-800/30 p-2 shadow-slate-800 transition-all duration-100 ease-in-out">
+      <Tilt className="relative aspect-video rounded-2xl bg-slate-800 shadow-2xl shadow-slate-800">
         <Link href={`/cabins/${cabin.name}`} className="group">
           <Image
             src={cabin.image_url[0]}
@@ -28,16 +28,6 @@ export default function Cabin({ cabin }: { cabin: Cabin }) {
           </h3>
         </Link>
       </Tilt>
-      <div className="space-y-0 p-4">
-        <div className="flex items-center justify-between">
-          <p className="cursor-default text-slate-300 select-none selection:text-blue-100 hover:text-blue-300">
-            {`Capacity: ${cabin.max_capacity}`}
-          </p>
-          <p className="cursor-default text-slate-300 select-none selection:text-blue-100 hover:text-blue-300">
-            {`Price: $${cabin.regular_price}`}
-          </p>
-        </div>
-      </div>
     </div>
   );
 }
