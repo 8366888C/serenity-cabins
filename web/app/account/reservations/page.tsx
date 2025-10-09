@@ -21,7 +21,7 @@ export default function Page() {
           You have no reservation yet. Check out our{" "}
           <Link
             href="/cabins"
-            className="dur ation-100 text-blue-200 transition-all ease-in-out hover:underline active:text-blue-100"
+            className="text-blue-200 transition-all duration-100 ease-in-out hover:underline active:text-blue-100"
           >
             cabins →
           </Link>

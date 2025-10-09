@@ -31,7 +31,7 @@ export default function Images({ cabin }: ImagesProps) {
           <button
             key={url}
             onClick={() => setImage(url)}
-            className={`group relative aspect-square size-10 rounded-lg transition-all duration-100 ease-in-out outline-none hover:bg-none hover:ring-0 ${image === url ? "bg-none ring-2 ring-blue-300" : "bg-slate-800 ring-4 ring-slate-600"} active:size-[2.35rem]`}
+            className={`group relative aspect-square size-10 rounded-lg transition-all duration-100 ease-in-out outline-none hover:bg-none hover:ring-0 ${image === url ? "bg-none ring-2 ring-blue-300" : "bg-slate-800 ring-4 ring-slate-600"} active:size-[2.3rem]`}
           >
             <Image
               src={url}

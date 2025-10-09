@@ -1,10 +1,16 @@
 import { getCabin } from "@/services/supabase-api";
 import { EyeOffIcon, MapPinIcon, UsersIcon } from "lucide-react";
 import Images from "@/components/Images";
+
 interface ParamsProps {
   params: {
     cabin_name: string;
   };
+}
+
+export async function generateMetadata({ params }: ParamsProps) {
+  const cabin = await getCabin(params.cabin_name);
+  return { title: `cabin ${cabin.name}` };
 }
 
 export default async function Page({ params }: ParamsProps) {
@@ -62,6 +68,11 @@ export default async function Page({ params }: ParamsProps) {
               </h4>
             </div>
           </div>
+        </div>
+        <div className="mt-10 text-center">
+          <h2 className="text-3xl font-semibold text-slate-300">
+            Reserve today. Pay on arrival.
+          </h2>
         </div>
       </div>
     </div>

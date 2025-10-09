@@ -10,7 +10,16 @@ export async function getCabin(name: string) {
     .single();
 
   if (error) {
-    console.error(error);
+    console.log("Supabase error:");
+    console.dir(
+      {
+        message: error.message,
+        details: error.details,
+        hint: error.hint,
+        code: error.code,
+      },
+      { depth: null },
+    );
     notFound();
   }
 
